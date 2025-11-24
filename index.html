@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRX - Главная страница</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images(BRX)/лого title.png">
+</head>
+<body>
+    <!-- Canvas для анимированного фона -->
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Переключатель темы -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Анимированные декоративные элементы -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <div class="container">
+        <!-- Основной контент -->
+        <main class="main-content">
+            <!-- Заголовок -->
+            <div class="logo-section">
+                <div class="logo-wrapper">
+                    <div class="logo-glow"></div>
+                    <div class="logo">
+                        <img src="images(BRX)/BRX лого.png" alt="BRX" class="logo-image">
+                    </div>
+                </div>
+                <div class="subtitle">
+                    <div class="wavy-line"></div>
+                    <span class="subtitle-text">BRX - это сеть серверов по майнкрафту. От приватного выживания(с контентмейкерами) до королевских битв и ивентов. Сообщество только развивается и около 85% контента находится на этапе разработки. Будем благодарны за проявление активности и поддержке на бусти, которая будет нас мотивировать продолжать.</span>
+                    <div class="wavy-line"></div>
+                </div>
+            </div>
+
+            <!-- Кнопки ссылок -->
+            <div class="links-section">
+                <a href="https://t.me/news_BRXteam" class="link-button news">
+                    <div class="button-icon news-icon">
+                        <img src="images(BRX)/Телеграм(лого телеграма BRX).jpg" alt="Telegram" class="icon-image">
+                    </div>
+                    <span class="button-text">Новости BRXteam</span>
+                    <div class="button-icon-right">
+                        <img src="images(общие)/Телеграм(лого самого телеграма).png" alt="Telegram BRX" class="icon-image">
+                    </div>
+                </a>
+
+                <a href="https://discord.gg/UYqTyv6J" class="link-button discord">
+                    <div class="button-icon discord-icon">
+                        <img src="images(BRX)/Дискорд(лого дискорд BRX).png" alt="Discord" class="icon-image">
+                    </div>
+                    <span class="button-text">Discord BRX</span>
+                    <div class="button-icon-right">
+                        <img src="images(общие)/Дискорд(лого самого дискорда).png" alt="Discord BRX" class="icon-image">
+                    </div>
+                </a>
+
+                <a href="https://t.me/BRXcontent" class="link-button content">
+                    <div class="button-icon content-icon">
+                        <img src="images(BRX)/Телеграм2(лого телеграма BRX).jpg" alt="Telegram" class="icon-image">
+                    </div>
+                    <span class="button-text">Контент BRXsmp</span>
+                    <div class="button-icon-right">
+                        <img src="images(общие)/Телеграм(лого самого телеграма).png" alt="Telegram BRX" class="icon-image">
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/@BRXcontent" class="link-button youtube">
+                    <div class="button-icon youtube-icon">
+                        <img src="images(BRX)/Ютуб(лого ютуб BRX).png" alt="YouTube" class="icon-image">
+                    </div>
+                    <span class="button-text">YouTube BRX</span>
+                    <div class="button-icon-right">
+                        <img src="images(общие)/Ютуб(лого самого ютуба).png" alt="YouTube BRX" class="icon-image">
+                    </div>
+                </a>
+
+                <a href="https://www.tiktok.com/@brx.official_?_t=ZP-8zO89ASDgwJ&_r=1" class="link-button tiktok">
+                    <div class="button-icon tiktok-icon">
+                        <img src="images(BRX)/Тик ток(лого тик тока BRX).png" alt="TikTok" class="icon-image">
+                    </div>
+                    <span class="button-text">TikTok BRX</span>
+                    <div class="button-icon-right">
+                        <img src="images(общие)/Тик ток(лого самого тик тока).png" alt="TikTok BRX" class="icon-image">
+                    </div>
+                </a>
+
+                <a href="https://boosty.to/brx.official" class="link-button boosty">
+                    <div class="button-icon boosty-icon">
+                        <img src="images(BRX)/Бусти(лого бусти BRX).png" alt="Boosty" class="icon-image">
+                    </div>
+                    <span class="button-text">Поддержать проект на Boosty</span>
+                    <div class="button-icon-right">
+                        <img src="images(общие)/Бусти(лого самого бусти).png" alt="Boosty BRX" class="icon-image">
+                    </div>
+                </a>
+
+                
+                <div class="wavy-line"></div>
+                
+
+                <a href="Owners/index.html" class="link-button">
+                    <div class="button-icon">
+                        <img src="images(BRX)/BRX лого с фоном.png" alt="Owners" class="icon-image">
+                    </div>
+                    <span class="button-text">Владельцы</span>
+                    <div class="button-icon-right">
+                        <img src="images(BRX)/BRX лого с фоном.png" alt="Owners" class="icon-image">
+                    </div>
+                </a>
+
+                <a href="Youtubers/index.html" class="link-button">
+                    <div class="button-icon">
+                        <img src="images(общие)/Ютуб(лого самого ютуба).png" alt="Youtubers" class="icon-image">
+                    </div>
+                    <span class="button-text">Ютуберы</span>
+                    <div class="button-icon-right">
+                        <img src="images(общие)/Ютуб(лого самого ютуба).png" alt="Youtubers" class="icon-image">
+                    </div>
+                </a>
+
+                <a href="BRXteam/index.html" class="link-button">
+                    <div class="button-icon">
+                        <img src="images(BRX)/BRXteam лого с фоном.png" alt="BRXteam" class="icon-image">
+                    </div>
+                    <span class="button-text">Участники BRXteam</span>
+                    <div class="button-icon-right">
+                        <img src="images(BRX)/BRXteam лого с фоном.png" alt="BRXteam" class="icon-image">
+                    </div>
+                </a>
+            </div>
+
+            <div class="thanks-section">
+                <div class="wavy-line"></div>
+                <div class="thanks-content">
+                    <h3 class="thanks-title">Благодарность за поддержку проекта</h3>
+                    <div class="thanks-list">
+                        <div class="thanks-item">✨ Спонсору WHALE</div>
+                        <div class="thanks-item">🚀 Бустеру Леонид Гавичюс</div>
+                        <div class="thanks-item">💎 Донатерам Леонид Гавичюс и Xavin</div>
+                    </div>
+                </div>
+                <div class="wavy-line"></div>
+            </div>
+
+            <!-- Статистика -->
+            <div class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="85">0</div>
+                    <div class="stat-label">% в разработке</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">% энтузиазма</div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
